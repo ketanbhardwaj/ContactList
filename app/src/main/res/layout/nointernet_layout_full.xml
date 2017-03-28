@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@null"
+    android:padding="10dp">
+    <FrameLayout
+
+        android:layout_gravity="bottom"
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#ffe94b"
+        >
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2c427f"
+            android:text="No Internet Connection"
+            android:id="@+id/textView"
+            android:gravity="center"
+
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            android:id="@+id/ok_button"
+            android:layout_gravity="right|top" />
+    </FrameLayout>
+
+</FrameLayout>
